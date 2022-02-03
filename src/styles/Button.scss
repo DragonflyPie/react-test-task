@@ -1,0 +1,26 @@
+@use "base";
+
+button {
+  background-color: base.$blue-button;
+  display: inline-flex;
+  height: 24px;
+  border-radius: 5px;
+  color: base.$white;
+  font-size: 12px;
+  padding: 5px 15px;
+
+  align-items: center;
+  line-height: 14px;
+  border: 0px;
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.button-inactive {
+  background-color: base.$grey-button;
+}
+
+.button-active {
+  background-color: base.$green;
+}

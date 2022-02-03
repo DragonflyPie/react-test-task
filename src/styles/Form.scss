@@ -1,0 +1,61 @@
+@use "base";
+
+.invalid {
+  border: 1px solid;
+  border-color: base.$red;
+}
+
+form {
+  width: 438px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  button {
+    margin-right: 0;
+  }
+}
+
+.inputs-container {
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: base.$grey-light;
+  padding: 20px 6px 19px 6px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+form input {
+  color: base.$grey-form;
+  width: 211px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: base.$grey-borders;
+}
+
+form textarea {
+  color: base.$grey-form;
+  width: 420px;
+  height: 55px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: base.$grey-borders;
+  resize: none;
+}
+.form-label {
+  font-size: 8px;
+  margin-bottom: 3px;
+}
+
+.form-edit input {
+  color: base.$black;
+}
+.form-top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
