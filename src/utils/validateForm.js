@@ -1,3 +1,4 @@
+// валидация формы. реализована только проверка на пустое поле (согласно моему пониманию ТЗ)
 export default function validateForm(values) {
   let errors = {};
 

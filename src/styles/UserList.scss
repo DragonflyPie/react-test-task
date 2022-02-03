@@ -31,3 +31,12 @@ h3 {
   margin: 10px 0px;
   text-align: end;
 }
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 420px;
+}

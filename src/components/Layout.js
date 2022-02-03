@@ -4,7 +4,7 @@ import Button from "./Button.js";
 import useList from "./useList.js";
 
 const Layout = () => {
-  const { toggleSortMethod, sortedUsers } = useList();
+  const { toggleSortMethod, sortedUsers, loading } = useList();
 
   return (
     <div className="app-container">
@@ -22,7 +22,7 @@ const Layout = () => {
         />
       </div>
       <div className="page-container">
-        <Outlet context={[sortedUsers]} />
+        <Outlet context={[sortedUsers, loading]} />
       </div>
     </div>
   );

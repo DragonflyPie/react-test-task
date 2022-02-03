@@ -1,5 +1,5 @@
 import { useState, useMemo, createContext } from "react";
-
+// начальный список
 const userList = [
   {
     id: 1,
@@ -237,8 +237,10 @@ const DataContext = createContext();
 
 export default DataContext;
 
+// провайдер контекста, раздаёт список пользователей и функцию по его редактированию другим компонентам
 export function DataProvider({ children }) {
   const [users, setUsers] = useState(userList);
+
   const value = useMemo(() => ({ users, setUsers }), [users]);
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
